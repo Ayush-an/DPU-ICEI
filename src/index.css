@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import 'keen-slider/keen-slider.min.css';
+
+
+/* In your Navbar component's CSS or a global stylesheet */
+.my-navbar-class {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it's above other content */
+  /* And then its height, background-color, etc. */
+  height: 80px; /* Make sure this matches NAVBAR_HEIGHT_PX */
+}
