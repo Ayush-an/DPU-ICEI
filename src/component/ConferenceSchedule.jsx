@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from './navbar';
-import Footer from './footer';
+import Navbar from '../component/navbar';
+import Footer from '../component/footer';
 
 // Data for Day 1 Schedule
 const day1Schedule = [
