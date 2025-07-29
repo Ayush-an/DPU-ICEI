@@ -1,16 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import collegeLogo from '../assets/img/DPU_logo.png';
 
-export default function App() {
-  return (
-    <div className="font-sans">
-      {/* The Navbar component */}
-      <Navbar />
-    </div>
-  );
-}
-
-function Navbar() {
+export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -51,7 +42,6 @@ function Navbar() {
       dropdownItems: [
         { name: 'About Us', link: '/aboutus' },
         { name: 'Our Vision & Mission', link: '/visionpage' },
-      //  { name: 'Mission', link: '#mission' },
       ],
     },
     {
@@ -98,7 +88,6 @@ function Navbar() {
   return (
     <nav className={navbarClasses}>
       {/* Top Section of the Navbar */}
-      {/* Changed justify-between to justify-center and added space-x for spacing */}
       <div className="container mx-auto px-4 py-3 flex items-center justify-center space-x-8">
         {/* Left Logo */}
         <div className="flex-shrink-0">
@@ -111,12 +100,11 @@ function Navbar() {
         </div>
 
         {/* Center Text Content */}
-        {/* Removed flex-grow and mx-4 as space-x on parent handles spacing */}
         <div className="text-center">
           <h1 className="text-xl md:text-2xl font-bold text-orange-800">
-            DR. D.Y PATIL UNITECH SOCIETY'S <p>DR. D.Y. PATIL ARTS, COMMERCE & SCIENCE COLLEGE, AKURDI, PUNE-41 044 </p>
-             <p>DR. D.Y PATIL SCIENCE AND COMPUTER SCIENCE COLLEGE, AKURDI, PUNE-411 044</p>
-           
+            DR. D.Y PATIL UNITECH SOCIETY'S
+            <span className="block">DR. D.Y. PATIL ARTS, COMMERCE & SCIENCE COLLEGE, AKURDI, PUNE-41 044</span>
+            <span className="block">DR. D.Y PATIL SCIENCE AND COMPUTER SCIENCE COLLEGE, AKURDI, PUNE-411 044</span>
           </h1>
           <p className="text-sm md:text-base text-gray-600 mt-1">
             1<sup>st</sup> International Conference on Emerging Trends and Innovations in DYP-DPU (ICEI-2025)
@@ -194,7 +182,7 @@ function Navbar() {
                       <a
                         key={dropdownItem.name}
                         href={dropdownItem.link}
-                        className="block px-4 py-2 text-sm hover:bg-blue-800 rounded-md"
+                        className="block px-4 py-2 text-sm hover:bg-blue-800 hover:text-white rounded-md"
                       >
                         {dropdownItem.name}
                       </a>

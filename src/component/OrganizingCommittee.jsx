@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from '../Component/Navbar';
-import Footer from '../Component/Footer';
+import Navbar from './navbar';
+import Footer from './footer';
 // Recommended image size: 256x256 pixels
 
 const chiefPatrons = [

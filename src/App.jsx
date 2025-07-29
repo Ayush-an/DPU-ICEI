@@ -5,7 +5,7 @@ import Slideshow from "./component/Slideshow";
 import AboutConference from "./component/About_conference";
 import AboutPune from "./component/About_Pune";
 import WelcomeHome from "./pages/Welcome-Home";
-import Footer from "./Component/Footer";
+import Footer from "./component/footer";
 import AboutUS from "./component/AboutUS";
 import Visionpage from "./component/Visionpage";
 import CallForPaper from "./component/CallForPaper";
@@ -13,7 +13,7 @@ import ConferenceSchedule from "./component/ConferenceSchedule";
 import OrganizingCommittee from "./component/OrganizingCommittee";
 import TechnicalProgramCommittee from "./component/TechnicalProgramCommittee";
 
-import Navbar from "./Component/Navbar";
+import Navbar from "./component/navbar";
 const App = () => {
   return (
     <Router>

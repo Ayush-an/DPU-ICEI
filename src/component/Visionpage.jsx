@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../Component/Footer';
+import Footer from './footer';
 import collagelog from '../assets/img/DPU_logo.png';
 
 const Visionpage = () => {

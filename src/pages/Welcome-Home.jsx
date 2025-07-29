@@ -1,7 +1,7 @@
 // src/pages/Welcome-Home.jsx
 import React from 'react';
-import Footer from '../Component/Footer';
-import Navbar from '../Component/Navbar';
+import Footer from '../component/footer';
+import Navbar from '../component/navbar';
 import Header1 from '../component/Header1';
 import AboutConference from '../component/About_conference';
 import AboutPune from '../component/About_Pune';
